@@ -1,0 +1,11 @@
+Lever middels dit inleverloket in:
+
+product-detailpagina 
+
+Neem hierin minimaal op:
+Navigatiebalk
+Grote foto van het product
+3 kleine foto’s van het product
+Informatie over het product
+Bestelknop
+Footer met copyright

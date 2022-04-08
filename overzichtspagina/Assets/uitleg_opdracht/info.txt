@@ -1,0 +1,9 @@
+Bouw als eerste de Webshop overzichtspagina, gebruik daarvoor als voorbeeld bijgevoegd wireframe (zie hieronder)
+Het wireframe dient als leidraad voor jouw webshop, je mag er dus vanaf wijken. Het ontwerp hoeft dus niet 1 op 1 perfect te lijken.
+
+Neem in je overzichtspagina minimaal op:
+Navigatiebalk met logo
+Producten overzicht met minimaal 20 producten, dit mogen dezelfde producten zijn
+Sidebar met categorieën overzicht
+Footer met copyright
+Lever dit eerste deel op middels het eerste inleverloket onderaan. Deadline is 10 januari.

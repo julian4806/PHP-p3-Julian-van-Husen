@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  font-family: montserrat;
+}
+
+/* Navbar */
+nav {
+  background: rgb(85, 85, 85);
+  height: 80px;
+  width: 100%;
+}
+img.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  margin-top: -5px;
+  padding: 20px;
+  padding-left: 20px;
+  font-weight: bold;
+  height: 100px;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  font-size: 17px;
+  color: white;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+nav a.active,
+nav a:hover {
+  background: #323333;
+  transition: 0.5s;
+}
+
+.adminpage:hover:after {
+  content: " Adminpagina";
+}
+
+/* productoverzicht */
+
+main {
+  border: 1px solid black;
+  width: 90%;
+  margin: 10px 600px 0 300px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightyellow;
+}
+
+main figure {
+  flex: 1 0 10%;
+  margin: 20px;
+  height: auto;
+  width: 150px;
+}
+
+main figure img {
+  width: 150px;
+}
+
+main figure span {
+  width: 150px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+main figure p {
+  width: 150px;
+}
+
+main figure:hover {
+  opacity: 0.6;
+  border: 1px solid;
+}
+
+/* Sidebar */
+.wrapper .sidebar {
+  width: 200px;
+  height: 100%;
+  background: rgb(85, 85, 85);
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.wrapper .sidebar ul li a {
+  color: #bdb8d7;
+  display: block;
+}
+
+.wrapper .sidebar ul li:hover {
+  background-color: #594f8d;
+}
+
+.wrapper .sidebar ul li:hover a {
+  color: #fff;
+}
+
+/* Footer */
+.copyright {
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  float: right;
+  width: 100%;
+  /* Height of the footer*/
+  height: 40px;
+  text-align: center;
+  background: rgb(134, 134, 134);
+}

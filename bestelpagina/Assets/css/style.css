@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    font-family: montserrat;
+}
+
+/* Navbar */
+nav {
+    background: rgb(85, 85, 85);
+    height: 80px;
+    width: 100%;
+}
+
+img.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    margin-top: -5px;
+    padding: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    height: 100px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-size: 17px;
+    color: white;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+nav a.active, nav a:hover {
+    background: #323333;
+    transition: .5s;
+}
+
+
+
+/* Overzicht artikelen */
+.container {
+    border: 2px solid black;
+    width: 1500px;
+}
+
+/* Zit samen in een div */
+.overzichtfloat {
+    border: 1px solid black;
+    height: 300px;
+}
+
+.aantal {
+    border: 1px solid black;
+    float: left;
+    width: 50%;
+    height: 300px;
+    padding-left: 5px;
+}
+
+.aantal p {
+    margin-top: 30px;
+}
+
+.aantal p span {
+    font-weight: bold;
+}
+
+.dropdown span {
+    font-size: 20px;
+}
+
+/* Bestelknop */
+.dropdown .bestelknop button {
+    border-radius: 10px;
+    height: 40px;
+    width: 160px;
+    background-color: black;
+    float: right;
+    margin-top: -40px;
+    margin-right: 10px;
+}
+
+.dropdown .bestelknop button:hover {
+    opacity: .6;
+}
+
+.dropdown .bestelknop button a {
+    font-size: 30px;
+    color: white;
+
+}
+
+.totaalprijs {
+    float: right;
+    border: 1px solid black;
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.totaalprijs p {
+    font-weight: bold;
+}
+
+.leverdatum {
+    border: 1px solid black;
+    height: 100px;
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+.leverdatum span {
+    font-weight: bold;
+}
+
+.betaalmethoden {
+    border: 1px solid black;
+    height: 110px;
+}
+
+.betaalmethoden img {
+    height: 100px;
+    display: flex;
+    margin: 0 auto 0;
+
+}
+
+/* Footer */
+.copyright {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    float: right;
+    width: 100%;
+    /* Height of the footer*/
+    height: 40px;
+    text-align: center;
+    background: rgb(134, 134, 134);
+}

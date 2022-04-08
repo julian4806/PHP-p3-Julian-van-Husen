@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  font-family: montserrat;
+}
+
+/* Navbar */
+nav {
+  background: rgb(85, 85, 85);
+  height: 80px;
+  width: 100%;
+}
+img.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  margin-top: -5px;
+  padding: 20px;
+  padding-left: 20px;
+  font-weight: bold;
+  height: 100px;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  font-size: 17px;
+  color: white;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+nav a.active,
+nav a:hover {
+  background: #323333;
+  transition: 0.5s;
+}
+
+/* productoverzicht */
+.container-productoverzicht {
+  margin-left: 10px;
+}
+
+.container {
+  width: 1000px;
+  height: 535px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+input[type="radio"] {
+  width: 175px;
+  height: 112px;
+  border: 1px solid black;
+  display: block;
+  -webkit-appearance: none;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  border: 1px solid black;
+}
+
+.display-image {
+  width: 750px;
+  height: 500px;
+  border: 1px solid black;
+  position: absolute;
+  top: 105px;
+  float: left;
+  margin-left: 200px;
+  background-size: cover;
+  transition: 0.1s;
+}
+
+#one {
+  background-image: url(../img/sneaker3.jpg);
+  background-size: cover;
+}
+
+#two {
+  background-image: url(../img/sneaker2.jpg);
+  background-size: cover;
+}
+
+#three {
+  background-image: url(../img/sneaker1.jpg);
+  background-size: cover;
+}
+
+#four {
+  background-image: url(../img/sneaker4.jpg);
+  background-size: cover;
+}
+
+#one:checked ~ .display-image {
+  background-image: url(../img/sneaker3.jpg);
+}
+
+#two:checked ~ .display-image {
+  background-image: url(../img/sneaker2.jpg);
+}
+
+#three:checked ~ .display-image {
+  background-image: url(../img/sneaker1.jpg);
+  background-size: cover;
+}
+
+#four:checked ~ .display-image {
+  background-image: url(../img/sneaker4.jpg);
+  background-size: cover;
+}
+
+/* productoverzicht bestelinfo */
+.bestelinfo {
+  border: 1px solid black;
+  margin-left: 1025px;
+  margin-top: -535px;
+  width: 1000px;
+  height: 535px;
+  border: 1px solid black;
+  padding: 10px;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+}
+
+.bestelinfo .producttitel {
+  font-weight: bold;
+}
+
+/* Maat */
+.bestelinfo .maat {
+  margin-top: 100px;
+  display: block;
+}
+
+.bestelinfo .maat select {
+  height: 45px;
+  width: 90px;
+  font-size: 30px;
+}
+.bestelinfo .maat select option {
+  font-size: 25px;
+}
+
+/* Bestelknop */
+.bestelinfo .bestelknop button {
+  border-radius: 10px;
+  height: 40px;
+  width: 160px;
+  background-color: black;
+}
+
+.bestelinfo .bestelknop button:hover {
+  opacity: 0.6;
+}
+
+.bestelinfo .bestelknop button a {
+  font-size: 30px;
+  color: white;
+}
+
+/* Levertijd */
+.bestelinfo .levertijd span {
+  color: rgb(255, 136, 0);
+}
+
+/* Productinformatie */
+.productinformatie {
+  border: 1px solid black;
+  width: 2025px;
+  font-size: 30px;
+}
+
+.productinformatie span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Footer */
+.copyright {
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  float: right;
+  width: 100%;
+  /* Height of the footer*/
+  height: 40px;
+  text-align: center;
+  background: rgb(134, 134, 134);
+}
