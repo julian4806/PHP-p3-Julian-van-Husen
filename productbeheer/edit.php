@@ -40,10 +40,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                             <h3> Update Products </h3>
                         </div>
                         <div class="card-body">
-                            <form action="update.php?ID=<?php echo  $ProductID ?>" method="POST">
+                            <form action="update.php?ID=<?php echo  $ProductID ?>" method="POST" enctype="multipart/form-data">
                                 <input type="text" placeholder=" Product Title " name="title" value="<?php echo $ProductTitle ?>">
                                 <input type="file" placeholder=" Product Image " name="image" value="<?php echo $ProductImage ?>">
-                                <textarea type="text" placeholder=" Product Description " name="description" value="<?php echo $ProductDescription ?>"></textarea>
+                                <textarea type="text" placeholder=" Product Description " name="description" ><?php echo $ProductDescription ?></textarea>
                                 <button name="update">Update</button>
                             </form>
                         </div>

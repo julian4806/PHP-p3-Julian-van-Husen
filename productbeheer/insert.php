@@ -15,7 +15,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
             echo 'Please Fill in the blanks';
         } else {
 
-            // testCode
             $file = $_FILES['image'];
 
             $ProductTitle = $_POST['title'];
@@ -23,7 +22,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
             $fileName = $_FILES['image']['name'];
 
             $fileTmpName = $_FILES['image']['tmp_name'];
-            // $fileSize = $_FILES['file']['size'];
             $fileError = $_FILES['image']['error'];
             $fileType = $_FILES['image']['type'];
 
@@ -34,27 +32,20 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
             if (in_array($fileActualExt, $allowed)) {
                 if ($fileError === 0) {
-                    // if ($fileSize < (1000000 * 50)) { //100mb
+
                     $fileNameNew = uniqid('',  true) . "." . $fileActualExt;
                     $fileDestination = '../productbeheer/images/' . $fileNameNew;
                     move_uploaded_file($fileTmpName, $fileDestination);
 
-                    // image file directory
                     $query = " INSERT INTO `products` (`title` , `image`, `description`) VALUES('$ProductTitle', '$fileNameNew', '$ProductDescription') ";
                     $result = mysqli_query($conn, $query);
-
-
-
-                    // header("Location: index.php?uploadsuccess");
-                    // } else {
-                    // echo "Your file is too big!";
-                    // }
                 } else {
                     echo " Oops something went wrong while uploading your file! ";
                 }
             } else {
                 echo " You cannot upload files of this type! ";
             }
+            // testCodeEnd
 
             if ($result) {
                 header("location:view.php");
