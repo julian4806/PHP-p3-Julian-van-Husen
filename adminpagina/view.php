@@ -69,7 +69,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
 
                         </table>
-                        <a href="adduser.php">Add a User</a>
+                        <a href="adduser.php">Add a User</a><br>
+                        <a href="../adminpagina/index.php">Back to the Adminpage</a>
                     </div>
                 </div>
             </div>

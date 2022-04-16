@@ -72,7 +72,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                 ?>
 
             </table>
-            <a href="addproduct.php">Add a Product</a>
+            <a href="addproduct.php">Add a Product</a><br>
+            <a href="../adminpagina/index.php"> Back to the Adminpage </a>
         </div>
 
         </form>

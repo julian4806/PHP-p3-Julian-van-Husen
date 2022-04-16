@@ -33,27 +33,17 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
     <body>
 
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="card">
-                        <div class="card-title">
-                            <h3> Update Products </h3>
-                        </div>
-                        <div class="card-body">
-                            <form action="update.php?ID=<?php echo  $ProductID ?>" method="POST" enctype="multipart/form-data">
-                                <input type="text" placeholder=" Product Title " name="title" value="<?php echo $ProductTitle ?>">
-                                <input type="file" placeholder=" Product Image " name="image" value="<?php echo $ProductImage ?>">
-                                <textarea type="text" placeholder=" Product Description " name="description" ><?php echo $ProductDescription ?></textarea>
-                                <button name="update">Update</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+            <h3> Update Products </h3>
+
+            <form action="update.php?ID=<?php echo  $ProductID ?>" method="POST" enctype="multipart/form-data">
+                <input type="text" placeholder=" Product Title " name="title" value="<?php echo $ProductTitle ?>">
+                <input type="file" placeholder=" Product Image " name="image" value="<?php echo $ProductImage ?>">
+                <textarea type="text" placeholder=" Product Description " name="description"><?php echo $ProductDescription ?></textarea>
+                <button name="update">Update</button>
+            </form>
         </div>
-
         </form>
-
     </body>
 
     </html>

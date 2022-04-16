@@ -33,8 +33,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                                 <input type="text" class="form-control" placeholder=" Password " name="password" 1><br><br>
                                 <button name="submit">Add User</button>
                             </form>
-                            <a href="./view.php"> Manage all users </a> <br>
-                            <a href="../productbeheer/index.php"> Manage all products </a>
+                            <a href="./view.php"> Manage all users </a>
                         </div>
                     </div>
                 </div>
