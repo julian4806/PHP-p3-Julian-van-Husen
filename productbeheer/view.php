@@ -61,7 +61,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                         </td>
 
                         <td><a href="edit.php?GetID=<?php echo $ProductID ?>">Edit</a></td>
-                        <td><a href="delete.php?Del=<?php echo $ProductID ?>">Delete</a></td>
+                        <td><a onclick="return confirm('Are you sure?')" href="delete.php?Del=<?php echo $ProductID ?>">Delete</a></td>
                     </tr>
 
 
