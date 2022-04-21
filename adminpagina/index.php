@@ -1,5 +1,3 @@
-<!-- https://www.youtube.com/watch?v=zz_2DMmcjZU -->
-
 <?php
 session_start();
 
